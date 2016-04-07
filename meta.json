@@ -2,25 +2,30 @@
  * Metadata describing the module operation
  */
 {
-    //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "owner",
+            "title":"Owner"
+        },
+        {
+            "id": "repo",
+            "title": "Repo"
+        },
+        {
+            "id": "number",
+            "title": "Issue number"
+        },
+        {
+            "id": "body",
+            "title": "Body"
         }
-        */
     ],
-    //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
-        {
-            "id": "from",
-            "title":"From"
-        }
-      */
     ],
-    "title": "GitHub Create Issue Comment" /* Required.A display name for the module */
+    "title": "GitHub Create Issue Comment",
+    "icon": "github",
+    "providers": [ {
+        "name": "github",
+        "scopes": [ "repo" ]
+    } ]
 }
