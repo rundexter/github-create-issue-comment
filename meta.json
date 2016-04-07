@@ -21,6 +21,14 @@
         }
     ],
     "outputs": [
+        {
+            "id": "url",
+            "title": "Comment URL"
+        },
+        {
+            "id": "id",
+            "title": "Comment ID"
+        }
     ],
     "title": "GitHub Create Issue Comment",
     "icon": "github",
